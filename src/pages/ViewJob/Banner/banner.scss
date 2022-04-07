@@ -1,0 +1,27 @@
+
+// Banner
+.columns.banner {
+  // border: 1px solid black;
+  margin: 0;
+  // height: 10vh;
+  background-color: #fafafa;
+  font-family: 'Inter', sans-serif !important;
+  padding: 10px 40px;
+
+  .column {
+    // border: 1px solid black;
+  // Banner Label
+  .banner-label {
+    font-size: .98rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+
+  // Banner value
+  .banner-value {
+    color: rgb(107 114 128/1);
+    font-size: .9rem;
+  }
+  }
+
+}

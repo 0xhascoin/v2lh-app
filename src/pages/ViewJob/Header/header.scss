@@ -1,0 +1,79 @@
+
+
+// Header
+#header {
+  // border: 1px solid black;
+  // height: 40vh;
+  margin: 0;
+  padding: 30px 40px;
+
+
+  // Logo col
+  .logo-col {
+    // border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+    max-height: 110px;
+    max-width: 110px;
+  }
+
+   // Content column
+    .content-col {
+      // border: 1px solid black;
+
+      // Job title
+      .job-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #34495e;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      // Company Details
+      .company-details {
+        font-weight: 300;
+        font-size: .85rem;
+        color: #34495e;
+
+        // Company Name
+        .company-name {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      }
+
+      // Company Description
+      .company-description {
+        font-weight: 300;
+        font-size: .85rem;
+        margin-top: 10px;
+        color: #34495e;
+      }
+
+      // Job Length
+      .job-length {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #34495e;
+        font-weight: 500;
+        background-color: #ffc10780;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: .9rem;
+      }
+
+      // Job Level
+      .job-level {
+        padding: 3px 5px; 
+        background-color: #f75679;
+        color: white;
+        font-size: .7rem;
+        font-weight: 600;
+        border-radius: 5px;
+        max-width: 70px;
+      }
+    }
+
+
+}

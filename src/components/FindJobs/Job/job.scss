@@ -1,0 +1,139 @@
+
+
+  // Field
+  .field {
+
+    // Control
+    .control {
+      min-width: 70%;
+    }
+    
+    // Filter input
+    .filter-input {
+      font-size: .9rem;
+      color: #2b2d42;
+      border: 1px solid #e1e3e6;
+      font-family: 'Archivo', sans-serif;
+    }
+
+    // Button
+    .button {
+      background-color: #0466c8;
+      font-size: .9rem;
+      transition: all .2s ease-in-out;
+      font-family: 'Archivo', sans-serif;
+
+
+      &:hover {
+        margin-top: -1px;
+        transform: scale(1.01);
+      }
+    } 
+  }
+
+  // Single Job
+  .single-job {
+    margin: 0;
+    padding: 10px;
+    // height: 120px;
+        // background-color: #e9ecef7a;
+    border: 1px solid #eee;
+    // border: 1px solid black;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(202, 202, 202, 0.28), 0 1px 2px rgba(184, 184, 184, 0.22);
+
+
+    &:hover {
+      cursor: pointer;
+      background-color: #c0d4d818;
+      // background-color: transparent;
+      // transform: scale(1.005);
+    }
+
+    // Logo column
+    .column.logo-col {
+      // border: 1px solid black;
+      padding: 10px;
+      margin: 0;
+      max-height: 90px;
+      max-width: 90px;
+
+      &.small {
+        max-height: 45px;
+        max-width: 45px;
+      }
+    }
+
+    // Content column
+    .content-col {
+      // border: 1px solid black;
+
+      // Job title
+      .job-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #34495e;
+        font-family: 'Archivo', sans-serif;
+      }
+
+      // Company Details
+      .company-details {
+        font-weight: 300;
+        font-size: .85rem;
+        color: #34495e;
+
+        // Company Name
+        .company-name {
+          font-weight: 600;
+        }
+      }
+
+      .application-count {
+        // border: 1px solid black;
+        padding: 6px 8px;
+        border-radius: 4px;
+        background-color: #c0d4d818;
+      }
+
+      // Company Description
+      .company-description {
+        font-weight: 300;
+        font-size: .85rem;
+        margin-top: 10px;
+        color: #34495e;
+      }
+
+      // Job Length
+      .job-length {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #34495e;
+        font-weight: 500;
+        background-color: #1cff0780;
+        padding: 5px;
+        padding-left: 10px;
+        font-size: .9rem;
+      }
+
+      // Job Level
+      .job-level {
+        padding: 3px 5px; 
+        background-color: #03071e;
+        color: white;
+        font-size: .7rem;
+        font-weight: 600;
+        border-radius: 5px;
+        max-width: 70px;
+      }
+
+
+
+
+    }
+  }
+

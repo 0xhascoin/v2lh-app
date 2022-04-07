@@ -1,0 +1,264 @@
+.job-container {
+  // border: 1px solid blue;
+  // padding: 0px 10%;
+  padding-top: 20px;
+  margin: 0 8%;
+}
+
+.video-container {
+    border: 1px solid #d8f3dc;
+    margin: 0 25%;
+    margin-top: 20px;
+    height: 10vh;
+    padding: 20px;
+}
+
+.status-container {
+  // border: 1px solid #d8f3dc;
+  margin: 0 25%;
+  margin-top: 20px;
+  // height: 10vh;
+  padding: 20px;
+  // border-radius: 5px;
+
+
+
+.content-center {
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: #eee;
+  padding: 10px;
+}
+
+.pulse i {
+  color: #fff
+}
+
+.pulse {
+  height: 50px;
+  width: 50px;
+  background-color: #60d394;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+
+.pulse:hover {
+  cursor: pointer;
+}
+
+.pulse::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #60d394;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 50%;
+  animation: pulse 1s linear infinite
+}
+
+.pulse::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #60d394;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 50%;
+  animation: pulse 1s linear infinite;
+  animation-delay: 0.3s
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.5);
+      opacity: 0
+  }
+
+  50% {
+      transform: scale(1);
+      opacity: 1
+  }
+
+  100% {
+      transform: scale(1.3);
+      opacity: 0
+  }
+}
+}
+
+#queue-container {
+  box-shadow: 0 8px 30px rgb(0 29 34 / 5%);
+  margin: 20px 5%;
+  padding: 20px;
+  // border: 1px solid black;
+
+  .queue-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 20px;
+  }
+
+.application {
+  // border: 1px solid black;
+  box-shadow: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Archivo', sans-serif;
+
+.columns.application-row {
+  // padding: 18px 5px;
+  // border: 1px solid blue;
+  margin: 0;
+
+  .column.icon-col {
+    p {
+      color: white;
+      background-color: black;
+      font-size: .8rem;
+      font-weight: 500;
+      // border: 1px solid black;
+      padding: 5px;
+      margin: 0px 10px;
+    }
+  }
+
+  .column.text-col {
+    // border: 1px solid black;
+
+    p {
+      font-size: 1rem;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .socials {
+      // border: 1px solid black;
+
+      a {
+        margin-right: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        i {
+          font-size: 1.2rem;
+
+          &.fa-github {
+            color: #171515;
+          }
+
+          &.fa-twitter {
+            color: #1DA1F2;
+          }
+        }
+      }
+    }
+  }
+
+  .column.expand-col {
+    font-size: .8rem;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+  .expand {
+    // border: 1px solid red;
+    padding: 10px;
+
+    .about-me-section {
+      // border: 1px solid black;
+      max-width: 60%;
+      margin-bottom: 20px;
+
+      .about-me-title {
+        font-size: .9rem;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+
+      .about-me-desc {
+        font-size: .9rem;
+      }
+    }
+
+    .expand-workexp {
+      // border: 1px solid black;
+
+      p {
+        font-size: 1rem;
+        color: black;
+      }
+
+      .example-job {
+    border: 1px solid black;
+        margin-top: 20px;
+        padding: 15px;
+        font-style: italic!important;
+        box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+        border-radius: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        max-width: 40%;
+        display: inline-block;
+        margin-right: 5px;
+        
+
+    .example-job-company {
+      font-size: .9rem;
+      font-weight: 500;
+      color: #000814;
+      padding-bottom: 5px;
+    }
+
+    .example-job-title {
+      font-size: .8rem;
+      color: #c3c5c9;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+    .example-job-desc {
+      font-size: .8rem;
+      color: #c3c5c9;
+    }
+
+    .length-worked {
+      margin-top: 10px;
+      font-size: .7rem;
+    }
+
+    .delete-work-exp {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-style: normal;
+      padding: 2px 6px;
+      color: white;
+      background-color: red;
+      font-weight: 600;
+      font-size: .8rem;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+    }
+  }
+}
+}

@@ -1,0 +1,35 @@
+
+
+.columns.hiring-section {
+  // border: 1px solid black;
+  margin: 0;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  .column {
+    // padding: 20px;
+    // border: 1px solid red;
+    // margin: 20px;
+
+    .title {
+      color: #34495e;
+      font-weight: 600;
+      font-family: Inter;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      color: #34495e;
+      font-weight: 300;
+      font-family: Inter;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+
+    .col-img {
+      min-height: 100%;
+      box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    }
+  }
+}

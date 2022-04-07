@@ -1,0 +1,97 @@
+
+
+// Page Two
+#page-three {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 20px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 30px;
+  // border: 1px solid black;
+
+    // H1
+  .page-two-title {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+
+  .hr {
+    min-width: 100%;
+  }
+
+      // Subtitle
+    .page-two-subtitle {
+      font-size: 1rem;
+      color: #34496B;
+      font-weight: 300;
+    }
+
+    // Form
+  .form {
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+
+
+
+    .field {
+      // border: 1px solid black;
+
+      // Label
+      .label {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: #34495e;
+
+        .required {
+          font-size: 13px;
+          font-weight: 300;
+          overflow-wrap: break-word; 
+        }
+
+        &.label-subtitle {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      // Input
+      .input {
+        border: 1px solid #e3e5e7;
+        box-shadow: none;
+        color: #34495e;
+      }
+    }
+  }
+    .back-button {
+      float: left;
+              font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        transition: all .2s ease-in-out;
+         background-color: rgb(99, 99, 99);
+
+        &:hover {
+          margin-top: -3px;
+          background-color: rgb(75, 75, 75);
+
+        }
+    }
+
+      .next-button {
+        background-color: #3ECCBB;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        transition: all .2s ease-in-out;
+        float: right;
+
+        &:hover {
+          background-color: #2a9d8f;
+          margin-top: -3px;
+        }
+      }
+}

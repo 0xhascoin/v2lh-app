@@ -1,0 +1,29 @@
+
+  // Job Details Column
+  .job-details-col {
+    // border: 1px solid black;
+    padding: 20px 60px !important;
+
+    // Company description title
+    .company-description-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #34495e;
+      border-bottom: 1px solid #f3f3f3;
+      margin-bottom: 0.75em;
+      padding-bottom: 0.75em;
+    }
+
+    // Company description text
+    .company-description-text {
+      font-weight: 400;
+      color: #34495e;
+      font-size: .9rem;
+    }
+
+    .company-description-label {
+      font-weight: 500;
+      color: #34495e;
+      font-size: .9rem;
+    }
+  }

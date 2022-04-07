@@ -1,0 +1,59 @@
+  // Actions Column
+  .actions-col {
+    // border: 1px solid black;
+    text-align: center;
+    padding: 20px 40px !important;
+    font-family: 'Inter', sans-serif !important;
+
+
+    .apply-container {
+      // border: 1px solid #34495e;
+      // height: 30vh;
+      background-color: #fafafa;
+      padding: 60px 0px;
+      padding-top: 20px;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+      
+      .apply-title {
+        font-size: 1.2rem;
+        color: #000814;
+        font-weight: 600;
+      }
+
+      .button {
+        width: 80%;
+        margin-top: 20px;
+        font-weight: 600;
+        background-color: #000814;
+        color: white;
+        border: 1px solid #000814;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(.97);
+        }
+
+      }
+
+      .interviews-button {
+        background-color: transparent;
+        color: #000814;
+        border: 1px solid #000814;
+        font-weight: 500;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+        transition: all .2s ease-in-out;
+
+          &:hover {
+            background-color: #000814;
+            color: white;
+          }
+      }
+
+      .interview-dates {
+        margin-top: 10px;
+        color: #000814;
+        text-decoration: underline;
+      }
+    }
+  }

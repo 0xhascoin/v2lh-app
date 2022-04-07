@@ -1,0 +1,63 @@
+.update-profile {
+  margin: 0;
+  width: 100%;
+  
+
+  .hero {
+      background-color: #e9ecef;
+      height: 12vh;
+      padding: 20px 65px;
+
+      h1 {
+        font-size: 1.2rem;
+      }
+
+  }
+
+  .update-profile-container.form {
+    // border: 1px solid black;
+    // height: 50vh;
+      margin-left: 5%;
+  margin-right: 5%;
+
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+
+    .field {
+      // border: 1px solid black;
+
+      // Label
+      .label {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: #34495e;
+
+        .required {
+          font-size: 13px;
+          font-weight: 300;
+        }
+
+        &.label-subtitle {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      // error text
+      .error-text {
+        font-size: 0.8rem;
+      }
+
+      // Input
+      .input {
+        // border: 1px solid #e3e5e7;
+        box-shadow: none;
+        color: #34495e;
+      }
+    }
+  }
+  }

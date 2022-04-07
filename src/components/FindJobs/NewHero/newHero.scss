@@ -1,0 +1,124 @@
+
+.hero {
+  // border: 1px solid black;
+  padding: 0;
+  // min-height: 75vh;
+  margin: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0px 15px 10px -15px rgba(199, 199, 199, 0.103);
+  font-family: 'Archivo', sans-serif !important;
+
+  .update-profile-notification {
+    // border: 1px solid black;
+    margin: 30px 10%;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    border-radius: 8px;
+
+    .notification-logo {
+      background-color: #000814;
+      text-align: center;
+      min-height: 100%;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .notification-text {
+      font-size: 1rem;
+      padding: 20px;
+
+      .title {
+        font-size: 1rem;
+      }
+
+      .subtitle {
+        font-size: .8rem;
+      }
+    }
+
+    .notification-button {
+      padding-top: 20px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .columns.hero-body {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    padding: 30px 30px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+
+    .column.left-col {
+      border: 1px solid black;
+      padding: 3rem;
+
+      .left-col-title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #03071e;
+        margin-bottom: 10px;
+      }
+
+      .left-col-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      .left-col-input {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        border: none;
+        outline: none;
+        font-size: .9rem;
+        border-radius: 0.5rem;
+        padding: 1.75rem 1rem;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      .left-col-buttons {
+        // border: 1px solid black;
+        margin-top: 20px;
+
+        .button {
+          margin: 0;
+          font-size: .9rem;
+          margin-right: 1.5rem;
+          border: none;
+           color: white;    
+          text-align: center;
+          transition: 0.5s;
+          background-size: 200% auto;
+          padding: 1.5rem 2rem;
+
+          &.is-light {
+            background-color: white;
+            border: none;
+            color: #03071e;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          }
+
+          &.is-dark {
+            background-color: #03071e;
+          }
+        }
+      }
+    }
+
+    .column.right-col {
+      // border: 1px solid black;
+      text-align: center;
+
+      .hero-img {
+      }
+    }
+  }
+}

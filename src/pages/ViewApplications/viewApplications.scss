@@ -1,0 +1,161 @@
+
+.application {
+  // border: 1px solid black;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 8px 30px rgb(0 29 34 / 5%);
+  margin-bottom: 40px;
+  padding: 0px;
+  font-family: 'Archivo', sans-serif;
+
+.columns.application-row {
+  // padding: 18px 5px;
+  // border: 1px solid blue;
+  margin: 0;
+  
+
+
+  .column.icon-col {
+    p {
+      color: white;
+      background-color: black;
+      font-size: .8rem;
+      font-weight: 500;
+      // border: 1px solid black;
+      padding: 5px;
+      margin: 0px 10px;
+    }
+  }
+
+  .column.text-col {
+    // border: 1px solid black;
+
+    p {
+      font-size: 1rem;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .socials {
+      // border: 1px solid black;
+
+      a {
+        margin-right: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        i {
+          font-size: 1.2rem;
+
+          &.fa-github {
+            color: #171515;
+          }
+
+          &.fa-twitter {
+            color: #1DA1F2;
+          }
+        }
+      }
+    }
+  }
+
+  .column.expand-col {
+    font-size: .8rem;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+  .expand {
+    // border: 1px solid red;
+    padding: 10px;
+
+    .about-me-section {
+      // border: 1px solid black;
+      max-width: 60%;
+      margin-bottom: 20px;
+
+      .about-me-title {
+        font-size: .9rem;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+
+      .about-me-desc {
+        font-size: .9rem;
+      }
+    }
+
+    .expand-workexp {
+      // border: 1px solid black;
+
+      p {
+        font-size: 1rem;
+        color: black;
+      }
+
+      .example-job {
+    // border: 1px solid black;
+        margin-top: 20px;
+        padding: 15px;
+        font-style: italic!important;
+        box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+        border-radius: 4px;
+        margin-bottom: 10px;
+        position: relative;
+        max-width: 40%;
+        display: inline-block;
+        margin-right: 5px;
+        
+
+    .example-job-company {
+      font-size: .9rem;
+      font-weight: 500;
+      color: #000814;
+      padding-bottom: 5px;
+    }
+
+    .example-job-title {
+      font-size: .8rem;
+      color: #c3c5c9;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+    .example-job-desc {
+      font-size: .8rem;
+      color: #c3c5c9;
+    }
+
+    .length-worked {
+      margin-top: 10px;
+      font-size: .7rem;
+    }
+
+    .delete-work-exp {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-style: normal;
+      padding: 2px 6px;
+      color: white;
+      background-color: red;
+      font-weight: 600;
+      font-size: .8rem;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+    }
+  }
+}

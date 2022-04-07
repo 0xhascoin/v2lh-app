@@ -1,0 +1,45 @@
+
+.who-section {
+  // border: 1px solid black;
+  // height: 50vh;
+  // margin-bottom: 20px;
+  text-align: center;
+  padding: 40px;
+
+  .title {
+    font-size: 1.4rem;
+    color: #34495e;
+    font-weight: 400;
+    font-family: Inter;
+    padding-bottom: 15px;
+  }
+
+  .subtitle {
+    color: #34495e;
+    font-weight: 300;
+    font-family: Inter;
+    font-size: .9rem;
+    margin: auto 10%;
+    letter-spacing: .07rem;
+  }
+
+
+
+  .who-box {
+    box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    // height: 20vh;
+    margin: auto 10%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border: 1px dotted rgb(228, 228, 228);
+
+    .title {
+      padding-top: 15px;
+      font-size: 1rem;
+    }
+
+    .subtitle {
+      font-size: .9rem;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+
+
+// Navbar
+.navbar {
+  // border: 1px solid black;
+  // padding: 10px 50px;
+  padding-top: .70rem;
+  padding-bottom: 10px;
+  font-family: 'Archivo', sans-serif;
+  background-color: #f8f9fa !important;
+
+  
+  // Navbar Brand
+  .navbar-brand {
+    // border: 1px solid black;
+    margin-right: 40px;
+    margin-left: 40px;
+    // Navbar Item
+    .navbar-item {
+      // border: 1px solid black;
+      font-size: 1.5rem;
+      color: #000814;
+      font-weight: 500;
+    }
+  }
+
+  // Navbar Menu
+  .navbar-menu {
+    // Navbar Start
+    .navbar-start {
+      // Navbar Item
+      .navbar-item {
+        font-size: .85rem;
+        color: #000814;
+        background-color: transparent;
+        margin-right: .75rem;
+
+        &:hover,
+        &.is-selected {
+          color: #03071e;
+          font-weight: 500;
+        }
+      }
+    }
+
+    
+      // Navbar end
+    .navbar-end {
+      // border: 1px solid black;
+      text-align: center;
+
+      .post-button {
+        background-color: #000814;
+        border: none;
+        text-align: left;
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 500;
+        transition: all 400ms ease;
+        border-radius: 3px;
+        padding: 1.2rem 3.5rem;
+        box-shadow: 0 1px 3px rgba(63, 63, 63, 0.07), 0 1px 3px rgba(46, 46, 46, 0.11);
+        font-family: 'Archivo', sans-serif;
+      }
+
+      // Login & register button
+      .login-button,
+      .register-button {
+        border: none;
+        font-size: .9rem;
+        color: #000814;
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+        margin: auto 15px;
+
+        &:hover {
+          color: #03071e;
+        }
+      }
+
+      &.signed-in {
+        // border: 1px solid #2a9d8f;
+        margin-right: 50px;
+
+
+        // Dropdown button
+        .dropdown-button {
+          // border: 1px solid black;
+          border: none;
+          background-color:transparent;
+
+        }
+
+
+        // Dropdown text
+        .dropdown-text {
+        font-size: .9rem;
+        color: #03071e;
+        }
+
+        // Arrow icon
+        .icon {
+          transition: all .2s ease-in-out;
+
+        }
+        .icon.flip {
+          transform: rotateX(180deg);
+        }
+
+        // user icon
+        .user-icon {
+          font-size: .8rem;
+          padding: 10px 18px;
+          background-color: #f8f9fa;
+          color: black;
+          margin-right: 5px;
+
+        }
+
+        // Dropdown Menu
+        .dropdown-menu {
+          // border: 1px solid blue;
+          background-color: #f5f3f4;
+
+          i {
+            margin-right: 10px;
+          }
+
+          // Dropdown content
+          .dropdown-content {
+            background-color: #f5f3f4;
+
+          }
+        }
+        
+      }
+    }   
+  }
+}

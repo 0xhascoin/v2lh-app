@@ -1,0 +1,101 @@
+
+.work-experience-section {
+  font-family: 'Inter', sans-serif;
+
+  .example-job {
+    // border: 1px solid black;
+    margin-top: 20px;
+    padding: 15px;
+    font-style: italic!important;
+    box-shadow: 0 8px 30px rgb(0 29 54 / 10%);
+    border-radius: 4px;
+    margin-bottom: 40px;
+    position: relative;
+
+    .example-job-company {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #000814;
+      padding-bottom: 5px;
+    }
+
+    .example-job-title {
+      font-size: .9rem;
+      color: #c3c5c9;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+
+    .example-job-desc {
+      font-size: .95rem;
+      color: #c3c5c9;
+    }
+
+    .length-worked {
+      margin-top: 10px;
+      font-size: .8rem;
+    }
+
+    .delete-work-exp {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-style: normal;
+      padding: 2px 6px;
+      color: white;
+      background-color: red;
+      font-weight: 600;
+      font-size: .8rem;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .add-section {
+
+    .subtitle {
+      color: #000814;
+    }
+
+    .add-new {
+        background-color: #03071e;
+        border: 2px solid #03071e;
+        font-size: .9rem;
+        color: white;
+        font-weight: 500;
+        transition: all .2s ease-in-out;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.07), 0 3px 6px rgba(0,0,0,0.11);
+
+        &:hover {
+          margin-top: 0;
+        }
+  }
+}
+
+ .save-modal-button {
+   background-color: #03071e;
+   border: 1px solid #03071e;
+   color: white;
+
+   &:hover {
+     color: white;
+   }
+  }
+
+ .cancel-modal-button {
+   background-color: white;
+   // border: 1px solid #03071e;
+   color: #03071e;
+
+   &:hover {
+     color: #03071e;
+   }
+  }
+
+  
+
+}

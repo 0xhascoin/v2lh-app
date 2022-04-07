@@ -1,0 +1,225 @@
+
+
+// Login Page
+.columns.register-page {
+  margin: 0;
+  padding: 0;
+  // border: 1px solid black;
+  min-height: 100vh;
+
+
+  // Login Form Column
+  .login-form-col {
+    // border: 1px solid black;
+    font-family: 'Inter', sans-serif !important;
+    padding: 0px 7%;
+    margin-top: 5%;
+
+    // Go Home
+    .go-home {
+      font-family: 'Inter', sans-serif !important;
+      color: #000814;
+      font-weight: 500;
+      font-size: .9rem;
+      text-decoration: underline;
+    }
+
+    // Login Form Title
+    .login-form-title {
+      font-size: 2rem;
+      color: #000814;
+      font-weight: 600;
+    }
+
+    // Login Form Subtitle
+    .login-form-subtitle {
+      font-size: 1rem;
+      color: #2b2b2bbd;
+      font-weight: 400;
+    }
+
+    // Form
+    .form {
+      // border: 1px solid black;
+      // margin: 0;
+
+      .label.user-type-text {
+        font-size: .9rem;
+        color: #2b2d42;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      // Field
+      .field {
+        // border: 1px solid black;
+
+        // Label
+        .label {
+          font-size: .9rem;
+          color: #2b2d42;
+          font-weight: 400;
+          margin: 0;
+          padding: 0;
+          
+        }
+
+        // Error text
+        .error-text {
+          font-size: .8rem;
+          margin: 0;
+        }
+
+        // Control
+        .control {
+          // border: 1px solid black;
+
+          &.password-control,
+          &.user-type-control {
+            min-width: 49%;
+
+            .button {
+              min-width: 100%;
+              border-radius: 10px;
+
+              .icon {
+                font-size: .7rem;
+              }
+
+              &.is-active {
+                background-color:#000814;
+              }
+
+              &.is-not-active {
+                border: 1px solid #000814;
+
+                &:hover {
+                  background-color:#000814;
+                }
+              }
+            }
+          }
+
+
+
+          // Input
+          .input {
+            font-size: .9rem;
+            color: #2b2d42;
+            // border: 1px solid #e1e3e6;
+            font-family: 'Inter', sans-serif !important;
+          }
+
+          // Select
+          .select {
+            font-size: .9rem;
+            color: #2b2d42;
+            font-family: 'Inter', 'sans-serif';
+            min-width: 100%;
+
+              &::after {
+                border-color:#000814;
+              }
+
+            select {
+              min-width: 100%;
+              font-size: .9rem;
+              color: #2b2d42;
+              font-family: 'Inter', 'sans-serif';
+            }
+            
+          }
+
+          // Sign in button
+          .login-button {
+            color: white;
+            background-color: #000814;
+            font-family: 'Inter', sans-serif !important;
+            padding: 22px;
+            border-radius: 10px;
+            border: none;
+          }
+
+          // Google button
+          .google-button {
+            color: #2b2d42;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif !important;
+            padding: 22px;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      // Forgot password
+      .forgot-password {
+        color: #000814;
+        font-weight: 600;
+        font-size: .9rem;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      // Sign up text
+      .sign-up-text {
+        font-family: 'Inter', sans-serif !important;
+        margin-top: 20px;
+
+        a {
+          color: #000814;
+          font-weight: 600;
+        }
+      }
+
+    }
+  }
+
+
+  // Image Column
+  .image-col {
+    // border: 1px solid black;
+    // background: url('./bgRegister.jpg') center no-repeat;
+    // background-size: cover;
+    background-color:#000814;
+    position: relative;
+    padding: 20px;
+    min-height: 50vh;
+
+
+    // Frosted card
+    .frosted-card {
+      // width: 95%;
+      // height: 25%;
+      position: absolute;
+      left: 20px;
+      bottom: 7%;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 1;
+      box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+      // margin: 20px;
+      // margin-right: 140px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: inset 0 .5em 1em rgba(0,0,0,.3);;
+        filter: blur(8px);
+        // margin: -20px;
+      }
+
+      // Title
+      .frosted-card-title {
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+    }
+  }
+}

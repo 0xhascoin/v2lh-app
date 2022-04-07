@@ -1,0 +1,83 @@
+
+
+// Page one
+.page-one {
+  // border: 1px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 20px;
+  font-family: 'Inter', sans-serif;
+
+  // H1
+  .page-one-title {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.75em;
+    margin-bottom: 0.75em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+
+  // Form
+  .form {
+
+    // Subtitle
+    .page-one-subtitle {
+      font-size: 1rem;
+      color: #34496B;
+      font-weight: 300;
+    }
+
+
+    // Field 
+    .field {
+      // border: 1px solid black;
+
+      // Label
+      .label {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: #34495e;
+      }
+
+      // error text
+      .error-text {
+        font-size: 0.8rem;
+      }
+
+      // Input
+      .input {
+        // border: 1px solid #e3e5e7;
+        box-shadow: none;
+        color: #34495e;
+      }
+
+      
+
+      // File input
+      .file-cta {
+        // border: 1px solid black;
+        background-color: #868e96;
+        color: white;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        
+      }
+
+      // Next button 
+      .next-button {
+        background-color: #03071e;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background-color: #03071e;
+          transform: scale(1.02);
+        }
+
+      }
+    }
+  }
+}

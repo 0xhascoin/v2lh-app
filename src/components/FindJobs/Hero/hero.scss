@@ -1,0 +1,50 @@
+
+// Hero
+.hero {
+  background-color: #e9ecef;
+  font-family: 'Inter', sans-serif !important;
+  // border: 1px solid black;
+  // padding: 0;
+  padding: 20px 65px;
+  max-height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+
+
+  // Hero Body
+  .hero-body {
+    margin: 0;
+    padding: 0;
+    // border: 1px solid blue;
+
+    // Remote Subtitle
+    .remote-subtitle {
+      color: #03071e;
+      // border: 1px solid black;
+    }
+
+    // Remote title
+    .remote-title {
+      color: #03071e;
+      // border: 1px solid black;
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    // Info text
+    .info-text {
+      // border: 1px solid black;
+      margin-top: 10px;
+      font-size: 14px;
+
+      // Highlight
+      .highlight {
+        color: #03071e;
+        font-weight: 600;
+        letter-spacing: .5px;
+      }
+    }
+  }
+}
