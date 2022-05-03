@@ -26,7 +26,9 @@ import Edu from "./Edu/Edu";
 import Loader from "./Loaders/Loader";
 import GuestLoader from "./Loaders/GuestLoader";
 
-const socket = io.connect("http://localhost:3001/");
+// const socket = io.connect("http://localhost:3001/");
+const socket = io.connect("https://v2lhbackend.herokuapp.com/");
+
 
 const NewRoom = (props) => {
   const [darkTheme, setDarkTheme] = useState(true);
