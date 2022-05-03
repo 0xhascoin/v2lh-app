@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans:wght@400;700&display=swap");
+
+*:focus {
+  outline: none;
+}
+
+.app {
+  padding-bottom: 2rem;
+  background-color: #f8f8f8;
+  // height: 100vh;
+
+  &.dark {
+    background-color: #121420;
+  }
+}
+
+.columns.room {
+  // border: 2px solid red;
+  margin: auto;
+  width: 95%;
+  padding: 0.25rem;
+  margin-top: 3rem;
+  box-shadow: none;
+
+  &.dark {
+    color: white;
+
+    .column.cv-col {
+      .cv-container {
+        .cv-header {
+          .cv-header-title,
+          .icon {
+            color: white !important;
+          }
+        }
+
+        .cv-content {
+          .cv-name {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .column.webcam-col {
+    // border: 2px solid blue;
+    margin: 0;
+    padding: 1rem 2rem;
+    height: 80vh;
+
+    .cam-container {
+      position: relative;
+      height: 100%;
+      background-color: black;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .guest-video,
+    .guest-video-loading {
+      // border: 1px solid green;
+
+      // background: url("https://cdn.helium.marketing/wp-content/uploads/speak-naturally-on-camera.jpeg?strip=all&lossy=1&ssl=1")
+      //   no-repeat center;
+      // background-size: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0px;
+      left: 0xp;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+
+    .call-options {
+      // border: 2px solid red;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 0.5rem;
+      border-radius: 6px;
+      background-color: #121420;
+
+      .button {
+        font-size: 0.8rem;
+      }
+    }
+
+    .my-video {
+      // border: 2px solid red;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 30%;
+      width: 25%;
+      border-radius: 6px;
+      // background: url("https://st2.depositphotos.com/1039548/11162/v/600/depositphotos_111622818-stock-video-businesswoman-making-a-video-call.jpg")
+      //   no-repeat center;
+      // background-size: cover;
+      object-fit: cover;
+      z-index: 2 !important;
+    }
+
+    .my-video-loading {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      // height: 30%;
+      // width: 25%;
+      border-radius: 6px;
+      background-color: black;
+    }
+
+    .guest-video-loading {
+      background: black !important;
+      // border: 2px solid white;
+
+      .my-video-loading {
+        border: 2px solid white;
+      }
+    }
+  }
+
+  .column.cv-col {
+    // border: 2px solid red;
+
+    .cv-container {
+      // border: 2px solid blue;
+
+      .cv-header {
+        // border: 1px solid black;
+        padding: 1.2rem 0.9rem;
+        font-size: 1.3rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+        .cv-header-title {
+          color: black;
+          font-weight: 600;
+          margin-left: 0.5rem;
+        }
+
+        .icon {
+          color: black;
+        }
+      }
+
+      .cv-section {
+        // border: 2px solid blue;
+        max-height: 60vh;
+        overflow: auto;
+      }
+
+      .cv-content {
+        // border: 1px solid black;
+        padding: 1.5rem 1rem;
+
+        .cv-name {
+          font-size: 1.2rem;
+          color: black;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+
+        .cv-subtitle {
+          font-size: 0.8rem;
+          margin-bottom: 0.25rem;
+        }
+
+        .cv-aboutme {
+          // border: 1px solid black;
+          margin-top: 1rem;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

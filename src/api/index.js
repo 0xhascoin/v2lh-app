@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // URL OF THE BACKEND API
-const url = 'https://v2lhbackend.herokuapp.com/api';
-// const url = "http://localhost:3001/api";
+// const url = 'https://v2lhbackend.herokuapp.com/api';
+const url = "http://localhost:3001/api";
 
 
 /*

@@ -1,0 +1,47 @@
+.work-exp {
+    // border: 1px solid black;
+    padding: 1.5rem 1rem;
+  
+    &.dark {
+      .work-exp-title,
+      .example-title,
+      .company-name {
+        color: white !important;
+      }
+    }
+  
+    .work-exp-title {
+      font-size: 1.1rem !important;
+      color: black;
+      font-weight: 700;
+    }
+  
+    .work-exp-example {
+      // border: 1px solid black;
+      margin-top: 1rem;
+  
+      .example-title {
+        font-size: 0.9rem !important;
+        color: black;
+        font-weight: 600;
+      }
+  
+      .company-name {
+        font-size: 0.9rem !important; 
+        margin-top: 0.5rem;
+        color: black;
+        font-weight: 500;
+      }
+  
+      .date {
+        margin-top: 0.5rem;
+        font-weight: 600;
+        font-size: 0.7rem !important;
+      }
+  
+      .short-desc {
+        margin-top: 1rem;
+          font-size: 0.7rem !important;
+      }
+    }
+  }

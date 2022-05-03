@@ -1,4 +1,4 @@
-import "./room5.scss";
+import "./newRoom.scss";
 
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,26 +6,30 @@ import { Link, useHistory } from "react-router-dom";
 import Peer from "simple-peer";
 import { Socket } from "socket.io-client";
 import { io } from "socket.io-client";
-import RoomHeader from "./RoomHeader";
-import WorkExp from "./WorkExp";
-import Edu from "./Edu";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { getAUser } from "../../actions/userActions";
 
-import "./loader.scss";
 import { BsCameraVideo } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import { GrDocumentText } from "react-icons/gr";
+import { BsFillFileTextFill } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
 
-// const socket = io.connect("https://v2lhbackend.herokuapp.com/");
+import Navbar from "./Navbar/Navbar";
+import WorkExp from "./WorkExp/WorkExp";
+import Edu from "./Edu/Edu";
+
+import Loader from "./Loaders/Loader";
+import GuestLoader from "./Loaders/GuestLoader";
+
 const socket = io.connect("http://localhost:3001/");
 
-const Room5 = (props) => {
+const NewRoom = (props) => {
+  const [darkTheme, setDarkTheme] = useState(true);
   const userId = props.match.params.userId;
   const hostId = props.match.params.hostId;
   const interviewId = props.match.params.interviewId;
@@ -248,119 +252,106 @@ const Room5 = (props) => {
     sessionStorage.setItem("refresh", true);
     history.push(`/interview/${interviewId}`);
   }
-
   return (
-    <>
-      <div className="notification is-danger">
-        {" "}
-        PLEASE DO NOT REFRESH THIS PAGE
-      </div>
-      <div className="columns room">
-        <div className="column video-col is-9">
-          {callAccepted && !callEnded && (
-            <video
-              className="guest-video"
-              playsInline
-              ref={userVideo}
-              autoPlay
-              muted
-            />
-          )}
-          {!callAccepted && (
-            <div className="loading-my-video">
-              <div class="lds-roller">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          )}
-          {stream && (
-            <video
-              className="my-video"
-              playsInline
-              ref={myVideo}
-              autoPlay
-              muted
-            />
-          )}
+    <div className={darkTheme ? "app dark" : "app"}>
+      <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+      <div className={darkTheme ? "columns room dark" : "columns room"}>
+        <div className="column is-8 webcam-col">
+          <div className="cam-container">
+            {callAccepted && !callEnded && (
+              <video
+                className="guest-video"
+                playsInline
+                ref={userVideo}
+                autoPlay
+                muted
+              />
+            )}
 
-          {guestsId !== "" && (
-            <div className="control-bar">
-              {hostsId !== "" && (
-                <>
-                  {callAccepted && !callEnded ? (
-                    <button
-                      className="button is-danger end-call"
-                      onClick={leaveCallWebrtc}
-                    >
-                      <ImCross />
-                      <span className="mx-2">End call</span>
-                    </button>
-                  ) : (
-                    <>
-                      {callWaiting ? (
-                        <p className="tag is-info is-light">Calling user ...</p>
-                      ) : (
-                        <button className="button is-primary">
-                          <BsCameraVideo />
-                          <span
-                            className="mx-2"
-                            onClick={() => callUserWebrtc(guestsId)}
-                          >
-                            Start call
-                          </span>
-                        </button>
-                      )}
-                    </>
-                  )}
-                </>
-              )}
-              {hostsId == "" && (
-                <>
-                  {call.isReceivingCall && !callAccepted && (
-                    <button
-                      className="button is-warning"
-                      onClick={answerCallWebrtc}
-                    >
-                      Answer call
-                    </button>
-                  )}
-                  {!call.isReceivingCall && (
-                    <p className="tag is-info is-light">
-                      Waiting for host to connect ...
-                    </p>
-                  )}
-                </>
-              )}
-            </div>
-          )}
+            {!callAccepted && <GuestLoader />}
+
+            {stream ? (
+              <video
+                className="my-video"
+                playsInline
+                ref={myVideo}
+                autoPlay
+                muted
+              />
+            ) : (
+              <Loader />
+            )}
+
+            {guestsId !== "" && (
+              <div className="call-options">
+                {hostsId !== "" && (
+                  <>
+                    {callAccepted && !callEnded ? (
+                      <button className="button is-danger" onClick={leaveCallWebrtc}>End Call</button>
+                    ) : (
+                      <>
+                        {callWaiting ? (
+                          <p className="tag is-info is-light">
+                            Calling user ...
+                          </p>
+                        ) : (
+                          <button className="button is-primary" onClick={() => callUserWebrtc(guestsId)}>
+                            Start Call
+                          </button>
+                        )}
+                      </>
+                    )}
+                  </>
+                )}
+                {hostsId == "" && (
+                  <>
+                    {call.isReceivingCall && !callAccepted && (
+                      <button className="button is-primary is-light mx-2" onClick={answerCallWebrtc}>
+                        Answer
+                      </button>
+                    )}
+                    {!call.isReceivingCall && (
+                      <p className="tag is-info is-light">
+                        Waiting for host to connect ...
+                      </p>
+                    )}
+                  </>
+                )}
+              </div>
+            )}
+          </div>
         </div>
-        <div className="column" id="cv-col">
-          <div className="cv-header">
-            <GrDocumentText /> <span className="cv-header-title">CV</span>
+        <div className="column cv-col">
+          <div className="cv-container">
+            <div className="cv-header">
+              <BsFillFileTextFill className="icon" />
+              <span className="cv-header-title">CV</span>
+            </div>
+            <div className="cv-section">
+              <div className="cv-content">
+                <h2 className="cv-name">Hasan Elmi Hasan</h2>
+                <p className="cv-subtitle">
+                  <GoGlobe /> United Kingdom
+                </p>
+                <p className="cv-subtitle">
+                  <HiOutlineMail /> hasanelmi678@gmail.com
+                </p>
+                <div className="cv-aboutme">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries
+                </div>
+              </div>
+              <WorkExp darkTheme={darkTheme} />
+              <Edu darkTheme={darkTheme} />
+            </div>
           </div>
-          <div className="cv-content">
-            <h2 className="cv-name">{user?.name}</h2>
-            <p className="cv-subtitle">
-              <GoGlobe /> {user?.location}
-            </p>
-            <p className="cv-subtitle">
-              <HiOutlineMail /> {user?.email}
-            </p>
-            <div className="cv-aboutme">{user?.userCV?.aboutMe}</div>
-          </div>
-          <WorkExp user={user} />
-          <Edu user={user} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Room5;
+export default NewRoom;

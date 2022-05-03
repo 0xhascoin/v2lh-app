@@ -1,0 +1,251 @@
+.navbar {
+    &.navbar-light {
+      background-color: #ffffff40;
+    }
+  
+    &.navbar-dark {
+      background-color: rgba(32, 32, 35, 0.5);
+  
+      .navbar-burger span {
+        color: #e2e8f0;
+      }
+    }
+  
+    .navbar-brand {
+      font-family: "M PLUS Rounded 1c";
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-left: 2rem;
+    }
+  
+    // Navbar Burger
+    .navbar-burger {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      height: 2.7rem;
+      width: 2.7rem;
+      transition: all 200ms ease;
+  
+      span {
+        color: #1a202c;
+      }
+  
+      &.burger-button {
+        margin-left: 0px;
+      }
+  
+      &:hover {
+        background-color: #edf2f7;
+      }
+  
+      &.dark-theme-button {
+        margin-right: 0.5rem;
+        padding: 0.85rem;
+        background-color: #805ad5;
+        color: white;
+        border: none;
+  
+        &:hover {
+          background-color: #6b46c1;
+        }
+      }
+  
+      &.light-theme-button {
+        margin-right: 0.5rem;
+        padding: 0.85rem;
+        background-color: #fbd38d;
+        color: #1a202c;
+        border: none;
+  
+        &:hover {
+          background-color: #f6ad55;
+        }
+      }
+    }
+  
+    // Navbar Menu
+    .navbar-menu {
+      /* border: 1px solid black; */
+      font-family: "M PLUS Rounded 1c";
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1a202c;
+      /* background-color: #ffffff40 !important; */
+      background-color: transparent;
+      box-shadow: none;
+  
+      .navbar-end {
+        margin-right: 5rem;
+  
+        // Navbar Items
+        .navbar-item {
+          background-color: transparent;
+  
+          &:focus {
+            outline: none !important;
+          }
+  
+          &.dropdown {
+            // border: 1px solid black !important;
+            padding: 0;
+            font-family: "M PLUS Rounded 1c" !important;
+            background-color: transparent;
+            width: 25%;
+  
+            &:focus {
+              outline: none !important;
+            }
+  
+            .button {
+              background-color: transparent;
+              width: 100%;
+              font-family: "M PLUS Rounded 1c" !important;
+              font-size: 0.85rem;
+              font-weight: 500;
+              color: #1a202c;
+              height: 2.5rem;
+              border-radius: 6px;
+              border: none;
+  
+              .first-letter {
+                // border: 1px solid #1a202c;
+                padding: 0.1rem;
+                margin-right: 0.6rem;
+                // height: 70%;
+  
+                p {
+                  border: 1px solid black;
+                  padding: 0.2rem 0.5rem;
+                  background-color: #1a202c;
+                  color: white;
+                  border-radius: 3px;
+                }
+              }
+  
+              &.dark {
+                color: white;
+  
+  
+  
+                .first-letter {
+                  p {
+                    color: white;
+                    background-color:transparent;
+                    border: white 1px solid;
+                  }
+                }
+              }
+  
+              &:focus {
+                outline: none !important;
+              }
+            }
+  
+            .dropdown-trigger {
+              // border: 1px solid black;
+              width: 100%;
+              background-color: transparent;
+  
+              &:focus {
+                outline: none !important;
+              }
+            }
+  
+            .dropdown-menu {
+              // border: 1px solid black;
+              padding: 0;
+  
+              .count {
+                float: right;
+                background-color: #1a202c;
+                padding: 0 0.5rem;
+                color: white;
+                font-family: "M PLUS Rounded 1c" !important;
+              font-size: 0.85rem;
+              border-radius: 3px;
+              }
+            }
+          }
+  
+          &:hover {
+            background-color: transparent;
+          }
+  
+          &.navbar-item-dark {
+            color: rgba(255, 255, 255, 0.92);
+  
+            &:hover {
+              background-color: transparent;
+              color: rgba(255, 255, 255, 0.92);
+              text-decoration: underline;
+            }
+          }
+  
+          &.navbar-item-light {
+            color: #1a202c;
+  
+            &:hover {
+              background-color: transparent;
+              color: #1a202c;
+              text-decoration: underline;
+            }
+          }
+  
+          // Dark theme button inside the Navbar Menu
+          .dark-theme-button {
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: #805ad5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+  
+            &:hover {
+              cursor: pointer;
+              background-color: #6b46c1;
+              transition: all 200ms ease;
+            }
+          }
+          // Light theme button inside the Navbar Menu
+          .light-theme-button {
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: #fbd38d;
+            color: #1a202c;
+            border: none;
+            border-radius: 6px;
+  
+            &:hover {
+              cursor: pointer;
+              transition: all 200ms ease;
+              background-color: #f6ad55;
+              color: #1a202c;
+            }
+          }
+  
+          // Post job button
+          .post-job-button {
+            height: 2.5rem;
+            width: 9rem;
+            background-color: #1a202c;
+            color: rgba(255, 255, 255, 0.92);
+            border: none;
+            border-radius: 6px;
+  
+            &:hover {
+              cursor: pointer;
+              transition: all 200ms ease;
+            }
+  
+            &.dark {
+              color: #1a202c;
+              background-color: rgba(255, 255, 255, 0.92);
+            }
+          }
+        }
+      }
+    }
+  }

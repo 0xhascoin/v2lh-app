@@ -20,6 +20,7 @@ import Interviews from './pages/Interviews/Interviews';
 import Lobby from './pages/Lobby/Lobby';
 // import Room from './pages/Room/Room';
 import Room5 from './pages/Room/Room5';
+import NewRoom from './pages/NewRoom/NewRoom';
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
         <Route path='/edit/account' component={EditProfile} exact/>
         <Route path='/interviews' component={Interviews} exact/>
         <Route path='/interview/:id' component={Lobby} exact/>
-        <Route path='/interview/:interviewId/:hostId/:userId' component={Room5} exact/>
+        <Route path='/interview/:interviewId/:hostId/:userId' component={NewRoom} exact/>
+        {/* <Route path='/interview/:interviewId/:hostId/:userId/1' component={NewRoom} exact/> */}
       </main>
     </BrowserRouter>
   );

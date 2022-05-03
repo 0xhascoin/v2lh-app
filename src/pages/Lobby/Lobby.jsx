@@ -15,8 +15,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Job from "../../components/FindJobs/Job/Job";
 
 
-// const socket = io.connect("http://localhost:3001/");
-const socket = io.connect("https://v2lhbackend.herokuapp.com/");
+const socket = io.connect("http://localhost:3001/");
+// const socket = io.connect("https://v2lhbackend.herokuapp.com/");
 
 const Lobby = (props) => {
   const [interviewQueue, setInterviewQueue] = useState([]);
