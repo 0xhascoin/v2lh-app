@@ -19,7 +19,7 @@ import EditProfile from './pages/EditProfile/EditProfile';
 import Interviews from './pages/Interviews/Interviews';
 import Lobby from './pages/Lobby/Lobby';
 // import Room from './pages/Room/Room';
-import Room5 from './pages/Room/Room5';
+// import Room5 from './pages/Room/Room5';
 import NewRoom from './pages/NewRoom/NewRoom';
 
 function App() {

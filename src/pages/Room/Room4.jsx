@@ -17,7 +17,7 @@ import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { getAUser } from "../../actions/userActions";
 
-const socket = io.connect("http://localhost:3001");
+// const socket = io.connect("http://localhost:3001");
 
 const Room4 = (props) => {
   const userId = props.match.params.userId;

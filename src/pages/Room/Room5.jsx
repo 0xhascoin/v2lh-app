@@ -22,8 +22,8 @@ import { GrDocumentText } from "react-icons/gr";
 import { GoGlobe } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
 
-// const socket = io.connect("https://v2lhbackend.herokuapp.com/");
-const socket = io.connect("http://localhost:3001/");
+const socket = io.connect("https://v2lhbackend.herokuapp.com/");
+// const socket = io.connect("http://localhost:3001/");
 
 const Room5 = (props) => {
   const userId = props.match.params.userId;
